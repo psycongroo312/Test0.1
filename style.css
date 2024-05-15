@@ -1,0 +1,115 @@
+.container{
+    max-width: 1000px;;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.input{
+    color: black;
+    padding-left: 15px;
+    margin-block: 10px;
+    width: 1000px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid rgb(96, 93, 93);
+}
+
+.dopContnet{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}   
+
+.tick{
+    font-size: 24px;
+}
+
+.form_button{
+    width: 530px;
+    padding: 20px;
+    border-radius: 44px;
+    background: #313A5F;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.form_button:hover{
+    background-color: #5e6fb4;
+    cursor: pointer;
+}
+
+.select{
+    color: black;
+    padding-left: 15px;
+    margin-block: 10px;
+    width: 1020px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid rgb(96, 93, 93);
+}
+
+.error{
+    background-color: rgb(255, 154, 154);
+   
+}
+
+.password{
+    display: flex;
+    align-items: center;
+}
+
+.btn-pasport{
+    color: rgb(69, 62, 255);
+    background-color: white;
+    margin-block: 10px;
+    width: 1020px;
+    height: 55px;
+    border-radius: 7px;
+    border: 2px solid rgb(69, 62, 255);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-pasport:hover{
+    background-color: #a8d8ff;
+}
+.section{
+    display: flex;
+}
+
+.show-pasport{
+    margin-block: 20px;
+    width: 333px;
+    height: 600px;
+    border: 2px solid gray
+}
+
+.btn-delete{
+    border: 2px solid red; 
+    color: red;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+.btn-delete:hover{
+    background-color: rgb(255, 148, 148);
+}
+
+.btn-dowload{
+    border: 2px solid green; 
+    color: green;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-dowload:hover{
+    background-color: rgb(169, 255, 169);
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Контактные данные</h1>
+        <form action="register.php" method="POST" id="yourFormId" enctype="multipart/form-data">
+            <input class="input" id="lastname" name="lastname" type="text" placeholder="Фамилия">
+            <input class="input" id="name" name="name" type="text" placeholder="Имя">
+            <input class="input" id="postname" name="postname" type="text" placeholder="Отчество">
+            <input class="input" id="phoneMask" name="phone" type="text" placeholder="+7(928)940 54-82">
+            <input class="input" id="mail" name="mail" type="text" placeholder="Почта">
+
+            <select id="manager" class="select" name="manager">
+                <option selected disabled>Выберите менеджера</option>
+                <option value="Артур Исмаилов">Артур Исмаилов</option>
+                <option value="Никита Бошкин">Никита Бошкин</option>
+                <option value="Вячеслав Карелин">Вячеслав Карелин</option>
+                <option value="Сергей Стариков">Сергей Стариков</option>
+            </select>
+
+            <input class="input" id="password" name="password" type="password" placeholder="Введите пароль">
+            <input class="input" id="replayPassword" name="replayPassword" type="password"
+                placeholder="Повторите пароль">
+
+            <div class="dopContnet">
+                <div class="password">
+                    <input id="tickOne" class="tick" type="checkbox" />
+                    <p>Показать пароль</p>
+                </div>
+                <div class="password">
+                    <input id="tickTwo" class="tick" type="checkbox" />
+                    <p>Подтверждаю свою согласие на получение информационных рассылок</p>
+                </div>
+            </div>
+
+            <div class="error">
+                <p id="errorLastname"></p>
+                <p id="errorName"></p>
+                <p id="errorPostname"></p>
+                <p id="errorPhoneMask"></p>
+                <p id="errorMail"></p>
+                <p id="errorManager"></p>
+                <p id="errorPassword"></p>
+                <p id="errorReplayPassword"></p>
+            </div>
+
+            <input type="file" id="fileInput1" name="fileInput1" style="display: none;">
+            <button id="uploadButton1" class="btn-pasport">Паспорт (страница с фото)</button>
+            <input type="file" id="fileInput2" name="fileInput2" style="display: none;">
+            <button id="uploadButton2" class="btn-pasport">Паспорт (прописка)</button>
+            <input type="file" id="fileInput3" name="fileInput3" style="display: none;">
+            <button id="uploadButton3" class="btn-pasport">Договор участия (подписанный)</button>
+
+            <div class="section">
+                <div class="show-pasport">
+                    <p>Паспорт (страница с фото)</p>
+                    <div class="img_container_passport" id="img_container_passport"></div>
+                    <button id="page-delete" class="btn-delete">Удалить</button>
+                    <button id="page-dowload" class="btn-dowload">Скачать</button>
+                    <p>Название загруженного файла:</p>
+                    <h4 id="pageName"></h4>
+                </div>
+                <div class="show-pasport">
+                    <p>Паспорт (прописка)</p>
+                    <div class="img_container_propiska" id="img_container_propiska"></div>
+                    <button id="propiska-delete" class="btn-delete">Удалить</button>
+                    <button id="propiska-dowload" class="btn-dowload">Скачать</button>
+                    <p>Название загруженного файла:</p>
+                    <h4 id="propiskaName"></h4>
+
+                </div>
+                <div class="show-pasport">
+                    <p>Договор участия (подписанный)</p>
+                    <div class="img_container_dogovor" id="img_container_dogovor"></div>
+                    <button id="dogovor-delete" class="btn-delete">Удалить</button>
+                    <button id="dogovor-dowload" class="btn-dowload">Скачать</button>
+                    <p>Название загруженного файла:</p>
+                    <h4 id="dogovorName"></h4>
+                </div>
+            </div>
+
+            <input class="form_button" id="btnSubmit" type="submit">
+        </form>
+
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
